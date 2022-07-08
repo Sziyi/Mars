@@ -7,6 +7,13 @@ const login = (data) => {
     data
   })
 }
+const list = () => {
+  return request({
+    url: '/menu/list',
+    method: 'GET'
+  })
+}
 export default {
-  login
+  login,
+  list
 }

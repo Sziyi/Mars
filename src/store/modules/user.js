@@ -17,6 +17,11 @@ export default {
       const response = await UserApi.login(payload)
       //   console.log('vuex=>', response)
       return response
+    },
+    async list({ commit }, payload) {
+      const response = await UserApi.list(payload)
+      console.log('vuex=>', response)
+      return response
     }
   }
 }

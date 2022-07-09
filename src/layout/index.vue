@@ -27,4 +27,7 @@ import AppHeader from './Header'
   //   background-color: aqua;
   border-bottom: 1px solid #ddd;
 }
+.el-main {
+  padding: 0px;
+}
 </style>

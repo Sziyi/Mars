@@ -3,7 +3,7 @@
     <div class="left">
       <el-breadcrumb separator="/">
         <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-        <el-breadcrumb-item>{{ router.meta }}</el-breadcrumb-item>
+        <el-breadcrumb-item>欢迎体验Vue3全栈课程</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
     <div class="r">
@@ -11,7 +11,9 @@
         <span class="el-dropdown-link"> admin </span>
         <template #dropdown>
           <el-dropdown-menu>
-            <el-dropdown-item command="a">邮箱</el-dropdown-item>
+            <el-dropdown-item command="a"
+              >邮箱:admin@imooc.com</el-dropdown-item
+            >
             <el-dropdown-item command="logout">退出</el-dropdown-item>
           </el-dropdown-menu>
         </template>

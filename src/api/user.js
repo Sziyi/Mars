@@ -9,7 +9,7 @@ const login = (data) => {
 }
 const list = () => {
   return request({
-    url: '/menu/list',
+    url: '/users/getPermissionList',
     method: 'GET'
   })
 }

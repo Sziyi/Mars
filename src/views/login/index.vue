@@ -48,6 +48,7 @@ const rules = reactive({
 const dl = () => {
   //   alert('登录')
   LoginForm.value.validate(async (valid) => {
+    // console.log(valid)
     if (!valid) return
     await store.dispatch('user/login', loginForm)
     router.push('/')

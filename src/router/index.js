@@ -36,9 +36,9 @@ const routes = [
         }
       },
       {
-        path: '/system/muser',
-        name: '/system/muser',
-        component: () => import('../views/system_muser'),
+        path: '/system/menu',
+        name: '/system/menu',
+        component: () => import('../views/system_menu'),
         meta: {
           title: '菜单管理'
         }

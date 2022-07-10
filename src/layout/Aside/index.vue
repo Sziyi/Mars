@@ -4,9 +4,9 @@
       <img src="../../assets/1.png" alt="" class="titleImg" />
       <span class="title">Manager</span>
     </div>
-    <!-- <aside-menu></aside-menu> -->
+    <aside-menu></aside-menu>
 
-    <el-menu
+    <!-- <el-menu
       active-text-color="#409EFF"
       background-color="#001529"
       :default-active="$router.path"
@@ -31,12 +31,12 @@
         <el-menu-item index="/audit/leave">休假申请</el-menu-item>
         <el-menu-item index="/audit/approve">待审批</el-menu-item>
       </el-sub-menu>
-    </el-menu>
+    </el-menu> -->
   </div>
 </template>
 
 <script setup>
-// import AsideMenu from './AsideMenu'
+import AsideMenu from './AsideMenu'
 </script>
 <style scoped lang="scss">
 .aside {

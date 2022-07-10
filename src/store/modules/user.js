@@ -26,7 +26,7 @@ export default {
     },
     async getPermis({ commit }) {
       const response = await UserApi.list()
-      console.log('vuex=>', response)
+      // console.log('vuex=>', response)
       return response.menuList
     }
   }

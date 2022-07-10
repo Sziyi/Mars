@@ -22,7 +22,7 @@ const store = useStore()
 const data = ref([])
 const getMenuList = async () => {
   const res = await store.dispatch('user/getPermis')
-  console.log(res)
+  // console.log(res)
   data.value = res
 }
 getMenuList()

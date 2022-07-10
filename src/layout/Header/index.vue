@@ -3,7 +3,7 @@
     <div class="left">
       <el-breadcrumb separator="/">
         <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-        <el-breadcrumb-item>欢迎体验Vue3全栈课程</el-breadcrumb-item>
+        <el-breadcrumb-item>{{ title.value }}</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
     <div class="r">
@@ -23,8 +23,15 @@
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router'
-const router = useRouter()
+import { defineProps } from 'vue'
+import router from '../../router/index'
+
+const title = defineProps({
+  value: {
+    type: String,
+    default: () => ''
+  }
+})
 
 const handleCommand = (command) => {
   // console.log(command)
@@ -39,7 +46,7 @@ const handleCommand = (command) => {
 }
 
 const handleToHome = () => {
-  console.log('a')
+  console.log('邮箱')
 }
 const handleLogout = async () => {
   console.log('退出登录')
